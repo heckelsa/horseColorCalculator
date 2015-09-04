@@ -28,6 +28,39 @@
   *
   */
 
+const SORREL = "Sorrel";
+const CHESTNUT = "Chestnut";
+const PALOMINO = "Palomino";
+const CREMELLO = "Cremello";
+const GOLD_CHAMPAGNE = "Gold Champagne";
+const GOLD_CREAM_CHAMPAGNE = "Gold Cream Champagne";
+const RED_ROAN = "Red Roan";
+const RED_DUN = "Red Dun";
+const DUNALINO = "Dunalino";
+
+const BAY = "Bay";
+const DARK_BAY = "Dark Bay";
+const BUCKSKIN = "Buckskin";
+const PERLINO = "Perlino";
+const BAY_DUN = "Bay Dun";
+const DUNSKIN = "Dunskin";
+const DARK_BAY_DUN = "Dark Bay Dun";
+const SILVER_DARK_BAY_DUN = "Silver Dark Bay Dun";
+const SILVER_BAY_DUN = "Silver Bay Dun";
+const AMBER_CHAMPAGNE = "Amber Champagne";
+const AMBER_CREAM_CHAMPAGNE = "Amber Cream Champagne";
+
+const BLACK = "Black";
+const SMOCKY_BLACK = "Smocky Black";
+const SMOCKY_CREAM = "Smocky Cream";
+const BLUE_DUN = "Blue Dun";
+const CLASSIC_CHAMPAGNE = "Classic Champagne";
+const CLASSIC_CREAM_CHAMPAGNE = "Classic Cream Champagne";
+const BLUE_ROAN = "Blue Roan";
+
+
+
+
 var sorrel = "Sorrel";
 var chestnut = "Chestnut";
 var black = "Black";
@@ -244,11 +277,9 @@ function init(){
      var geneTestGray = new Gene(allelGrayg, allelGrayg);
 
      var colorTest = new Color(geneTestagouti, geneTestblack,
-geneTestcream, geneTestChampagne, geneTestRoan, geneTestDun,
-geneTestSilver,
-                                 geneTestFlaxen, geneTestSooty,
-geneTestRabicano, geneTestGray, geneTestSabino);
-     //var color = getColor(colorTest);
+								geneTestcream, geneTestChampagne, geneTestRoan, geneTestDun,
+								geneTestSilver, geneTestFlaxen, geneTestSooty,
+								geneTestRabicano, geneTestGray, geneTestSabino);
 
      var cream = getCreamDilution(colorTest);
      var champagne = getChampagneDilution(colorTest);
@@ -267,18 +298,3 @@ geneTestRabicano, geneTestGray, geneTestSabino);
 }
 
 init();
-
-
-/*
-function getColor(color) {
-
-     if(color.black.sum == 0){
-         return "Fuchs";
-     }else{
-         if(color.agouti.sum == 0){
-             return "Rappe";
-         }else {
-             return "Brauner";
-         }
-     }
-}*/
